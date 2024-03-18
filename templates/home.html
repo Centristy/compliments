@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<h1>{{ comp }},  {{ user.first_name }}  {{ user.last_name }}</h1>
+
+<a href="/secret" type="button">Secret</a>
+<br>
+<a href="/" type="button">Go Back</a>
+<br>
+<a href="users/{{user.username}}">User details</a>
+<br>
+
+<a href="/logout" type="button">Log Out</a>
+
+
+{% endblock %}
